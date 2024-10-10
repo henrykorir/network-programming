@@ -10,7 +10,6 @@ It 'fires and forget' using the User Datagram Protocol (UDP). If the listener ru
 
 ## poll.c, pollserver.c, select.c, and selectserver.c
 These demonstrates how to achieve non-blocking socket I/O using the `poll()` and `select()` system calls in C. The examples provided show both proof-of-concept code and real-world applications of these APIs.
-### Overview
 The primary goal of these examples is to illustrate how to handle multiple file descriptors (e.g., sockets) without blocking the program while waiting for data. By using either `poll()` or `select()`, the program can monitor multiple connections and perform other operations concurrently.
 1. **poll.c**  
    Proof of concept demonstrating the behavior of the `poll()` system call. This example shows how to use `poll()` to monitor multiple file descriptors for readability, writability, or errors.
