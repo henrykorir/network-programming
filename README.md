@@ -2,7 +2,7 @@
 A demonstration of network programming in C using sockets
 
 ## showip.c
-This code demonstrates the retrieval of a host machine's IP address. The code needs to be supplied with a hostname or IP (e.g., localhost, www.google.com, or 127.0.0.1).
+This code demonstrates the retrieval of a host machine's IP address. The code needs to be supplied with a hostname or IP (e.g., localhost, www.example.com, or 127.0.0.1).
 
 ## client.c and server.c
 Is the normal client-server architecture that is using the connection oriented protocol (TCP).
