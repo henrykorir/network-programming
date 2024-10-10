@@ -28,15 +28,11 @@ The primary goal of these examples is to illustrate how to handle multiple file 
 
 ## broadcast.c
 This demonstrates the transmission of broadcast messages to the entire network nodes.
-### Principle of Operation
-
+The Principle of Operation of this code is as follows:
 - **UDP (User Datagram Protocol)** is used to send broadcast messages. UDP is a connection-less protocol, making it suitable for sending messages to multiple devices simultaneously without establishing individual connections.
   
-- **Broadcasting to a subnet**:  
-  Send the data to a specific subnet’s broadcast address. For example, if the network address is `192.168.1.0` and the subnet mask is `255.255.255.0`, the broadcast address is `192.168.1.255`.
+- **Broadcasting to a subnet**: Send the data to a specific subnet’s broadcast address. For example, if the network address is `192.168.1.0` and the subnet mask is `255.255.255.0`, the broadcast address is `192.168.1.255`.
 
-- **Global broadcast**:  
-  Alternatively, you can send the data to the **global broadcast address** `255.255.255.255`, which will broadcast the message to all reachable nodes on the network.
+- **Global broadcast**: Alternatively, you can send the data to the **global broadcast address** `255.255.255.255`, which will broadcast the message to all reachable nodes on the network.
 
-- **Firewall considerations**:  
-  Ensure that the firewall on your local machine is not blocking UDP broadcast packets. If the firewall is configured to block UDP traffic, the broadcast messages will not be delivered to the network.
+- **Firewall considerations**: Ensure that the firewall on your local machine is not blocking UDP broadcast packets. If the firewall is configured to block UDP traffic, the broadcast messages will not be delivered to the network.
