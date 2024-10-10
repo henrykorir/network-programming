@@ -9,10 +9,10 @@ This demonstrates **connection-less communication**, where the sender (talker) d
 
 In this model:
 
-`*` The talker sends a message without establishing a connection with the listener.
-`*` If the listener is running at the time the message is transmitted, it will receive the message.
-`*` If the listener is not available, the message will be lost.
-`*` The talker does not care whether the message is received, as there is no feedback mechanism or guarantee of delivery in UDP.
+- The talker sends a message without establishing a connection with the listener.
+- If the listener is running at the time the message is transmitted, it will receive the message.
+- If the listener is not available, the message will be lost.
+- The talker does not care whether the message is received, as there is no feedback mechanism or guarantee of delivery in UDP.
 
 ## poll.c, pollserver.c, select.c, and selectserver.c
 These demonstrates how to achieve non-blocking socket I/O using the `poll()` and `select()` system calls in C. The examples provided show both proof-of-concept code and real-world applications of these APIs.
