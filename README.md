@@ -1,6 +1,9 @@
 # Network Programming with BSD Sockets
 A demonstration of network programming in C using sockets
 
+## showip.c
+This code demonstrates the retrieval of a host machine's IP address. The code needs to be supplied with a hostname or IP (e.g., localhost, www.google.com, or 127.0.0.1).
+
 ## client.c and server.c
 Is the normal client-server architecture that is using the connection oriented protocol (TCP).
 
@@ -15,7 +18,7 @@ In this model:
 - The talker does not care whether the message is received, as there is no feedback mechanism or guarantee of delivery in UDP.
 
 ## poll.c, pollserver.c, select.c, and selectserver.c
-These demonstrates how to achieve non-blocking socket I/O using the `poll()` and `select()` system calls in C. The examples provided show both proof-of-concept code and real-world applications of these APIs.
+These demonstrates how to achieve **non-blocking socket I/O** using the `poll()` and `select()` system calls in C. The examples provided show both proof-of-concept code and real-world applications of these APIs.
 The primary goal of these examples is to illustrate how to handle multiple file descriptors (e.g., sockets) without blocking the program while waiting for data. By using either `poll()` or `select()`, the program can monitor multiple connections and perform other operations concurrently.
 1. **poll.c**  
    Proof of concept demonstrating the behavior of the `poll()` system call. This example shows how to use `poll()` to monitor multiple file descriptors for readability, writability, or errors.
