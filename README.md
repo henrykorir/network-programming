@@ -6,7 +6,9 @@ Is the normal client-server architecture that is using the connection oriented p
 
 ## talker.c and listener.c
 This demonstrates **connection-less communication**, where the sender (talker) does not need to know if the receiver (listener) is up and running. It uses a "fire-and-forget" approach with **User Datagram Protocol (UDP)**.
+
 In this model:
+
 `*` The talker sends a message without establishing a connection with the listener.
 `*` If the listener is running at the time the message is transmitted, it will receive the message.
 `*` If the listener is not available, the message will be lost.
